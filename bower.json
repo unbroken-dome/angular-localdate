@@ -1,0 +1,22 @@
+{
+  "name": "angular-localdate",
+  "version": "0.1.0",
+  "homepage": "https://github.com/unbroken-dome/angular-localdate",
+  "authors": [
+    "Till Krullmann <till.krullmann@gmx.net>"
+  ],
+  "description": "Local date support for AngularJS",
+  "main": "dist/angular-localdate.js",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "date",
+    "localdate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
