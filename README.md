@@ -14,7 +14,7 @@ Using an `<input type="date">` for a local date in an AngularJS-managed form com
  time or timezone information from a `Date`.
 * By default, AngularJS attaches the browser's timezone information to the date. This is problematic because it means
  that dates in "positive" timezones (e.g. GMT+1) will have a local date part that is actually on the previous day.
- The workaround is to use `ng-model-options="{timezone: 'UTC'}" on the input tag to guarantee UTC datetimes.
+ The workaround is to use `ng-model-options="{timezone: 'UTC'}"` on the input tag to guarantee UTC datetimes.
 * Serializing a `Date` to JSON will always produce a full ISO-8601 datetime string. This could lead to problems if the
  back-end on the receiving end expects a pure date (e.g. the Jackson mapping for java.time.LocalDate or joda-time's
  LocalDate).
