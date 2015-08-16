@@ -22,11 +22,13 @@ angular.module('localDate', [])
                                 return (number < 10) ? ('0' + number) : number;
                             }
 
-                            value.toJSON = function () {
-                                return this.getUTCFullYear() +
-                                    '-' + pad(this.getUTCMonth() + 1) +
-                                    '-' + pad(this.getUTCDate());
-                            };
+                            if (value) {
+                                value.toJSON = function () {
+                                    return this.getUTCFullYear() +
+                                        '-' + pad(this.getUTCMonth() + 1) +
+                                        '-' + pad(this.getUTCDate());
+                                };
+                            }
                             return value;
                         });
                     }
